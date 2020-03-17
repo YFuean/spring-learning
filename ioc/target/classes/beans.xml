@@ -34,4 +34,16 @@
     <bean id="login2" class="com.soft1851.spring.ioc.entity.UserLogin">
         <property name="user" ref="user2"/>
     </bean>
+
+<!--    学生类装配多个手机-->
+    <bean id="newStudent" class="com.soft1851.spring.ioc.entity.NewStudent">
+        <property name="id" value="1802343301"/>
+        <property name="name" value="大锤"/>
+        <property name="phones"  >
+            <list>
+                <ref bean="phone"></ref>
+                <ref bean="phone1"></ref>
+            </list>
+        </property>
+    </bean>
 </beans>
