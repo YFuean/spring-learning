@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd">
     <bean id="hello" class="com.soft1851.spring.ioc.entity.Hello"/>
     <bean id="sort" class="com.soft1851.spring.ioc.entity.Sort"/>
 
@@ -35,15 +40,45 @@
         <property name="user" ref="user2"/>
     </bean>
 
-<!--    学生类装配多个手机-->
+<!--    注入书-->
+    <bean id="book1" class="com.soft1851.spring.ioc.entity.Book">
+        <property name="name" value="java"/>
+        <property name="price" value="123.2"/>
+    </bean>
+    <bean id="book2" class="com.soft1851.spring.ioc.entity.Book">
+        <property name="name" value="IOS"/>
+        <property name="price" value="233.2"/>
+    </bean>
+
     <bean id="newStudent" class="com.soft1851.spring.ioc.entity.NewStudent">
         <property name="id" value="1802343301"/>
         <property name="name" value="大锤"/>
-        <property name="phones"  >
+        <!--    学生类装配多个手机-->
+        <property name="phones">
             <list>
                 <ref bean="phone"></ref>
                 <ref bean="phone1"></ref>
             </list>
         </property>
+
+        <property name="scores">
+            <map>
+                <entry key="javaWeb" value="88"/>
+                <entry key="软件测试" value="90"/>
+                <entry key="毛概" value="76"/>
+            </map>
+        </property>
+
+<!--        学生类装配装配书-->
+        <property name="books">
+            <set>
+                <ref bean="book1"/>
+                <ref bean="book2"/>
+            </set>
+        </property>
+
     </bean>
+
+    <context:component-scan base-package="com.soft1851.spring.ioc.config"/>
+
 </beans>

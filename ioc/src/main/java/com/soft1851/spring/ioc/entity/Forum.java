@@ -5,25 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 /**
- * @ClassName Stu
+ * @ClassName Forum
  * @Description TODO
  * @Author yue_fan
  * @Date 2020/3/17
  **/
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class NewStudent {
-    private Integer id;
-    private String name;
-    private List<Phone> phones;
-    private Map scores;
-    private Set<Book> books;
+public class Forum {
+    private Integer forumId;
+    private String forumName;
 }
