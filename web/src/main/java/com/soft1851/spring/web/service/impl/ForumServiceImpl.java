@@ -17,37 +17,37 @@ import java.util.List;
  **/
 @Service
 public class ForumServiceImpl implements ForumService {
-    @Autowired
-    private ForumDao forumDao;
-
-
-    @Override
-    public int insert(Forum forum) {
-        return forumDao.insert(forum);
-    }
-
-    @Override
-    public int[] batchInsert(List<Forum> forums) {
-        return forumDao.batchInsert(forums);
-    }
-
-    @Override
-    public int delete(int forumId) {
-        return forumDao.delete(forumId);
-    }
-
-    @Override
-    public int update(Forum forum) {
-        return forumDao.update(forum);
-    }
-
-    @Override
-    public Forum getById(int forumId) {
-        return forumDao.getById(forumId);
-    }
-
-    @Override
-    public List<Forum> selectAll() {
-        return forumDao.selectAll();
-    }
+//    @Autowired
+//    private ForumDao forumDao;
+//
+//
+//    @Override
+//    public int insert(Forum forum) {
+//        return forumDao.insert(forum);
+//    }
+//
+//    @Override
+//    public int[] batchInsert(List<Forum> forums) {
+//        return forumDao.batchInsert(forums);
+//    }
+//
+//    @Override
+//    public int delete(int forumId) {
+//        return forumDao.delete(forumId);
+//    }
+//
+//    @Override
+//    public int update(Forum forum) {
+//        return forumDao.update(forum);
+//    }
+//
+//    @Override
+//    public Forum getById(int forumId) {
+//        return forumDao.getById(forumId);
+//    }
+//
+//    @Override
+//    public List<Forum> selectAll() {
+//        return forumDao.selectAll();
+//    }
 }

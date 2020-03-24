@@ -10,15 +10,15 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.util.List;
 
 import static org.junit.Assert.*;
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"/applicationContext.xml"})
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration(locations = {"/applicationContext.xml"})
 public class ForumDaoTest {
-    @Autowired
-    private ForumDao forumDao;
-
-    @Test
-    public void selectAll() {
-        List<Forum> forums = forumDao.selectAll();
-        System.out.println(forums);
-    }
+//    @Autowired
+//    private ForumDao forumDao;
+//
+//    @Test
+//    public void selectAll() {
+//        List<Forum> forums = forumDao.selectAll();
+//        System.out.println(forums);
+//    }
 }

@@ -25,6 +25,10 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.66" />
+          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf-spring5:3.0.11.RELEASE" />
+          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf:3.0.11.RELEASE" />
+          <element id="library" level="project" name="Maven: org.attoparser:attoparser:2.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.unbescape:unbescape:1.1.6.RELEASE" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="web/web/Web" />

@@ -10,27 +10,27 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.util.List;
 
 import static org.junit.Assert.*;
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"/applicationContext.xml"})
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration(locations = {"/applicationContext.xml"})
 public class ForumServiceTest {
-    @Autowired
-    private ForumService forumService;
-
-    @Test
-    public void selectAll() {
-        List<Forum> forums = forumService.selectAll();
-        System.out.println(forums);
-    }
-
-    @Test
-    public void insert() {
-        Forum forum = Forum.builder().forumName("畅聊电影").build();
-        forumService.insert(forum);
-    }
-
-    @Test
-    public void getById() {
-        Forum forum = forumService.getById(1);
-        System.out.println(forum);
-    }
+//    @Autowired
+//    private ForumService forumService;
+//
+//    @Test
+//    public void selectAll() {
+//        List<Forum> forums = forumService.selectAll();
+//        System.out.println(forums);
+//    }
+//
+//    @Test
+//    public void insert() {
+//        Forum forum = Forum.builder().forumName("畅聊电影").build();
+//        forumService.insert(forum);
+//    }
+//
+//    @Test
+//    public void getById() {
+//        Forum forum = forumService.getById(1);
+//        System.out.println(forum);
+//    }
 }

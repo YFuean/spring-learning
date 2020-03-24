@@ -17,27 +17,27 @@ import java.sql.ResultSet;
  * @Author yue_fan
  * @Date 2020/3/21
  **/
-@RestController
-@RequestMapping(value = "forum")
+//@RestController
+//@RequestMapping(value = "forum")
 public class ForumController {
-    @Autowired
-    private ForumService forumService;
-
-    @RequestMapping(value = "/insert",produces = "application/json; charset=utf-8")
-    public String insert(Forum forum){
-        ResponseObject ro = new ResponseObject(1,"成功",forumService.insert(forum));
-        return JSON.toJSONString(ro);
-    }
-
-    @RequestMapping(value = "/getById={forumId}",produces = "application/json; charset=utf-8")
-    public String getById(@PathVariable("forumId") int forumId){
-        ResponseObject ro = new ResponseObject(1,"成功",forumService.getById(forumId));
-        return JSON.toJSONString(ro);
-    }
-
-    @RequestMapping(value = "/list",produces = "application/json; charset=utf-8")
-    public String getForums(){
-        ResponseObject ro = new ResponseObject(1,"成功",forumService.selectAll());
-        return JSON.toJSONString(ro);
-    }
+//    @Autowired
+//    private ForumService forumService;
+//
+//    @RequestMapping(value = "/insert",produces = "application/json; charset=utf-8")
+//    public String insert(Forum forum){
+//        ResponseObject ro = new ResponseObject(1,"成功",forumService.insert(forum));
+//        return JSON.toJSONString(ro);
+//    }
+//
+//    @RequestMapping(value = "/getById={forumId}",produces = "application/json; charset=utf-8")
+//    public String getById(@PathVariable("forumId") int forumId){
+//        ResponseObject ro = new ResponseObject(1,"成功",forumService.getById(forumId));
+//        return JSON.toJSONString(ro);
+//    }
+//
+//    @RequestMapping(value = "/list",produces = "application/json; charset=utf-8")
+//    public String getForums(){
+//        ResponseObject ro = new ResponseObject(1,"成功",forumService.selectAll());
+//        return JSON.toJSONString(ro);
+//    }
 }
